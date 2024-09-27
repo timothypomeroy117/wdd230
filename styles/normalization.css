@@ -1,0 +1,77 @@
+html {
+    line-height: 1.15; /* Prevents the browser from collapsing spaces in some elements */
+    -webkit-text-size-adjust: 100%; /* Prevents font scaling on mobile devices */
+}
+
+/* Sections */
+body {
+    margin: 0; /* Removes default margin for consistency */
+}
+
+/* Grouping content */
+hr {
+    box-sizing: content-box; /* Ensures the box model doesn't break with border */
+    height: 0; /* Removes extra height for consistency */
+    overflow: visible; /* Ensures no clipping in older browsers */
+}
+
+/* Text-level semantics */
+pre {
+    font-family: monospace, monospace; /* Consistent font for preformatted text */
+    font-size: 1em; /* Ensures size consistency */
+}
+
+a {
+    background-color: transparent; /* Removes background from links */
+    text-decoration: none; /* Removes underline by default */
+}
+
+abbr[title] {
+    border-bottom: none; /* Removes underline on abbreviation */
+    text-decoration: underline dotted; /* Adds dotted underline */
+}
+
+/* Embedded content */
+img {
+    border-style: none; /* Removes default border on images in some browsers */
+    max-width: 100%; /* Ensures responsive images */
+    height: auto; /* Maintains aspect ratio */
+}
+
+/* Forms */
+button, input, optgroup, select, textarea {
+    font-family: inherit; /* Inherits font from parent */
+    font-size: 100%; /* Ensures no font scaling */
+    margin: 0; /* Removes default margin */
+}
+
+button, input { /* Prevent button and input from inheriting certain properties */
+    overflow: visible;
+}
+
+textarea {
+    overflow: auto; /* Ensures proper behavior in overflow */
+    resize: vertical; /* Limits resizing to vertical */
+}
+
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box; /* Ensures proper box model behavior */
+    padding: 0;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse; /* Ensures consistent border collapse */
+    border-spacing: 0; /* Removes extra space between cells */
+}
+
+td, th {
+    padding: 0; /* Removes padding in table cells */
+}
+
+/* General box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box; /* Consistent box-sizing across all elements */
+}
